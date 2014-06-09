@@ -38,9 +38,11 @@
     var mailToLink = 'mailto:'+ encodeURI(mailSubject + mailBody);
     
     document.getElementById('tacw').setAttribute('href', mailToLink);
-    
+
+
     // ga('send', 'event', 'category', 'action', 'label');
     ga('send', 'event', 'HUP', 'tacw ad click', orgName);
+    _gaq.push(['_trackEvent', 'HUP', 'tacw ad click', orgName]);
 
 
 </script>
