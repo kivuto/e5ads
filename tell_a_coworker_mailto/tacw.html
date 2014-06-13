@@ -32,7 +32,7 @@
     var orgName = orgName.replace("&", "and");
     
     
-    var mailBody = '&body=I thought you would be interested in this great deal being offered to our company.\nNow you can purchase Microsoft Office Professional Plus 2013 for your home computer for only $9.95. \n\nGo to the ' + orgName + ' web store:\n' + {WebStoreURL} + '\n\nEnjoy!';
+    var mailBody = '&body=I thought you would be interested in this great deal being offered to our company.\nNow you can purchase Microsoft Office Professional Plus 2013 for your home computer for only $9.95. \n\nGo to the ' + orgName + ' web store:\n' + '{WebStoreURL}' + '\n\nEnjoy!';
     var mailSubject = '?subject=Check this out... Take Office 2013 home for just $9.95!';          
     
     var mailToLink = 'mailto:'+ encodeURI(mailSubject + mailBody);
